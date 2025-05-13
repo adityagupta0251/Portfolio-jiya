@@ -3,20 +3,20 @@ import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Driver from "driver.js";
 import "driver.js/dist/driver.css";
-import { 
-  Send, 
-  Paperclip, 
-  Mic, 
-  X, 
-  HelpCircle, 
-  User, 
-  Bot, 
-  FileText, 
-  ExternalLink, 
-  ChevronDown, 
-  Moon, 
-  Sun, 
-  Clock 
+import {
+  Send,
+  Paperclip,
+  Mic,
+  X,
+  HelpCircle,
+  User,
+  Bot,
+  FileText,
+  ExternalLink,
+  ChevronDown,
+  Moon,
+  Sun,
+  Clock
 } from "lucide-react";
 
 const copilot = () => {
@@ -27,14 +27,14 @@ const copilot = () => {
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     },
   ]);
-  
+
   const [inputValue, setInputValue] = useState("");
   const [isThinking, setIsThinking] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(true);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
-  
+
   const messagesEndRef = useRef(null);
   const fileInputRef = useRef(null);
   const chatContainerRef = useRef(null);
@@ -72,12 +72,12 @@ const copilot = () => {
     if (!inputValue.trim()) return;
 
     // Add user message
-    const userMessage = { 
-      role: "user", 
+    const userMessage = {
+      role: "user",
       content: inputValue,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     };
-    
+
     setMessages((prev) => [...prev, userMessage]);
     setInputValue("");
     setIsThinking(true);
@@ -94,7 +94,7 @@ const copilot = () => {
   const processUserMessage = (message) => {
     const lowerCaseMessage = message.toLowerCase();
     let response = "";
-    
+
     // Generate response based on user input
     if (lowerCaseMessage.includes("projects") || lowerCaseMessage.includes("portfolio")) {
       response = "Here are my projects! Take a look at what I've been working on.";
@@ -134,20 +134,20 @@ const copilot = () => {
         "I'd be happy to help with that. Looking at my experience, ",
         "Thanks for asking! According to my portfolio, "
       ];
-      
+
       // Simulate an AI-like response by mixing relevant keywords from the question
       const keywords = message.split(" ").filter(word => word.length > 4);
       let relevantTopic = "my background involves extensive work with modern web technologies";
-      
+
       if (keywords.length > 0) {
         const randomKeyword = keywords[Math.floor(Math.random() * keywords.length)];
         if (randomKeyword) {
           relevantTopic = `I've worked on several projects involving ${randomKeyword} and related technologies`;
         }
       }
-      
-      response = generalResponses[Math.floor(Math.random() * generalResponses.length)] + 
-                relevantTopic + ". Would you like to know more about my projects or experience?";
+
+      response = generalResponses[Math.floor(Math.random() * generalResponses.length)] +
+        relevantTopic + ". Would you like to know more about my projects or experience?";
     }
 
     // Add assistant response
@@ -156,7 +156,7 @@ const copilot = () => {
       content: response,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     };
-    
+
     setMessages((prev) => [...prev, assistantMessage]);
   };
 
@@ -193,7 +193,7 @@ const copilot = () => {
   // Handle suggestion click
   const handleSuggestionClick = (suggestion) => {
     setInputValue(suggestion);
-    handleSubmit({ preventDefault: () => {} });
+    handleSubmit({ preventDefault: () => { } });
   };
 
   // Handle file upload
@@ -202,17 +202,17 @@ const copilot = () => {
     if (file) {
       const fileName = file.name;
       const fileSize = (file.size / 1024).toFixed(1) + " KB";
-      
+
       // Add user message with file info
-      const userMessage = { 
-        role: "user", 
+      const userMessage = {
+        role: "user",
         content: `[Uploaded file: ${fileName}]`,
         attachment: { name: fileName, size: fileSize, type: file.type },
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
-      
+
       setMessages((prev) => [...prev, userMessage]);
-      
+
       // Simulate processing response
       setIsThinking(true);
       setTimeout(() => {
@@ -324,7 +324,7 @@ const copilot = () => {
           }
         ]
       });
-      
+
       driver.drive();
     }, 500);
   };
@@ -342,14 +342,14 @@ const copilot = () => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col">
-      {/* Container with margin top and bottom */}
-      <div className="flex-1 overflow-hidden flex flex-col mx-4 my-5">
+    <div className="w-full min-h-screen flex justify-center items-center p-4">
+      <div className="max-w-5xl w-full bg-white dark:bg-gray-900 rounded-2xl shadow-2xl p-6 gap-6 flex flex-col sm:flex-row transition-all">
+
         <div
           id="chatbot-container"
           ref={chatContainerRef}
           className={`flex-1 flex rounded-xl overflow-hidden shadow-2xl ${isDarkMode ? 'dark-theme' : ''}`}
-          style={{zIndex: 1000}}
+          style={{ zIndex: 1000 }}
         >
           {/* Sidebar */}
           <div className="w-1/4 bg-gradient-to-b from-blue-600 to-purple-600 text-white p-4 flex flex-col">
@@ -365,37 +365,37 @@ const copilot = () => {
             <div className="flex-1 overflow-y-auto">
               <h3 className="text-lg font-semibold mb-3">Quick Navigation</h3>
               <div className="space-y-2">
-                <button 
+                <button
                   onClick={navigateToHome}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
                   <span className="mr-2">🏠</span> Home
                 </button>
-                <button 
+                <button
                   onClick={navigateToAbout}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
                   <span className="mr-2">👩‍💻</span> About Me
                 </button>
-                <button 
+                <button
                   onClick={navigateToProjects}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
                   <span className="mr-2">🚀</span> Projects
                 </button>
-                <button 
+                <button
                   onClick={navigateToBlog}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
                   <span className="mr-2">✍️</span> Blog
                 </button>
-                <button 
+                <button
                   onClick={navigateToContact}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
                   <span className="mr-2">📞</span> Contact
                 </button>
-                <button 
+                <button
                   onClick={handleResume}
                   className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
                 >
@@ -406,14 +406,14 @@ const copilot = () => {
 
             {/* Options */}
             <div className="mt-4 pt-4 border-t border-white/20">
-              <button 
-                onClick={startTour} 
+              <button
+                onClick={startTour}
                 className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
               >
                 <HelpCircle size={16} className="mr-2" /> Take Tour
               </button>
-              <button 
-                onClick={toggleDarkMode} 
+              <button
+                onClick={toggleDarkMode}
                 className="w-full text-left py-1.5 px-3 rounded-md hover:bg-white/20 transition flex items-center text-sm"
               >
                 {isDarkMode ? (
@@ -438,11 +438,10 @@ const copilot = () => {
             <div className={`p-3 border-b ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} flex justify-between items-center`}>
               <h3 className="font-semibold text-lg">Chat with Jayanti's Assistant</h3>
               <div className="flex space-x-2">
-                <button 
+                <button
                   onClick={clearChat}
-                  className={`px-2 py-1 rounded-md text-sm ${
-                    isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
+                  className={`px-2 py-1 rounded-md text-sm ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'
+                    }`}
                 >
                   Clear Chat
                 </button>
@@ -461,19 +460,18 @@ const copilot = () => {
                       <Bot size={16} />
                     </div>
                   )}
-                  
+
                   <div className={`max-w-3/4 overflow-hidden`}>
                     <div
-                      className={`p-3 rounded-xl ${
-                        message.role === "user"
+                      className={`p-3 rounded-xl ${message.role === "user"
                           ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-                          : isDarkMode 
-                            ? "bg-gray-700 text-white" 
+                          : isDarkMode
+                            ? "bg-gray-700 text-white"
                             : "bg-white text-black shadow-md"
-                      }`}
+                        }`}
                     >
                       {message.content}
-                      
+
                       {message.attachment && (
                         <div className="mt-1 p-1.5 bg-white/20 dark:bg-black/20 rounded-md flex items-center text-xs">
                           <FileText size={14} className="mr-1" />
@@ -484,12 +482,12 @@ const copilot = () => {
                         </div>
                       )}
                     </div>
-                    
+
                     <div className={`text-xs ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mt-1 flex items-center`}>
                       <Clock size={12} className="mr-1" /> {message.timestamp}
                     </div>
                   </div>
-                  
+
                   {message.role === "user" && (
                     <div className={`w-8 h-8 rounded-full ${isDarkMode ? 'bg-gray-700' : 'bg-gray-200'} flex items-center justify-center ml-2 flex-shrink-0`}>
                       <User size={16} />
@@ -497,7 +495,7 @@ const copilot = () => {
                   )}
                 </div>
               ))}
-              
+
               {isThinking && (
                 <div className="flex justify-start">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white mr-2 flex-shrink-0">
@@ -512,7 +510,7 @@ const copilot = () => {
                   </div>
                 </div>
               )}
-              
+
               {/* Quick suggestions */}
               {showSuggestions && !isThinking && messages.length < 3 && (
                 <div className="flex flex-wrap gap-2 mt-2">
@@ -520,62 +518,57 @@ const copilot = () => {
                     <button
                       key={idx}
                       onClick={() => handleSuggestionClick(suggestion)}
-                      className={`text-xs px-2.5 py-1 rounded-full ${
-                        isDarkMode
+                      className={`text-xs px-2.5 py-1 rounded-full ${isDarkMode
                           ? 'bg-gray-700 hover:bg-gray-600'
                           : 'bg-white hover:bg-gray-100'
-                      } transition-colors`}
+                        } transition-colors`}
                     >
                       {suggestion}
                     </button>
                   ))}
                 </div>
               )}
-              
+
               <div ref={messagesEndRef} />
             </div>
 
             {/* Input area */}
             <div className={`p-3 ${isDarkMode ? 'bg-gray-800 border-t border-gray-700' : 'bg-white border-t border-gray-200'}`}>
               {isRecording && (
-                <div className={`mb-2 p-2 ${
-                  isDarkMode ? 'bg-red-900/20 text-red-400' : 'bg-red-50 text-red-600'
-                } rounded-md text-xs flex items-center justify-between`}>
+                <div className={`mb-2 p-2 ${isDarkMode ? 'bg-red-900/20 text-red-400' : 'bg-red-50 text-red-600'
+                  } rounded-md text-xs flex items-center justify-between`}>
                   <div className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-red-500 rounded-full mr-1.5 animate-pulse"></span>
                     Recording audio...
                   </div>
-                  <button 
-                    onClick={toggleRecording} 
+                  <button
+                    onClick={toggleRecording}
                     className={`${isDarkMode ? 'text-red-400 hover:text-red-300' : 'text-red-600 hover:text-red-800'}`}
                   >
                     <X size={14} />
                   </button>
                 </div>
               )}
-              
+
               {showEmojiPicker && (
-                <div className={`mb-2 p-2 ${
-                  isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-200'
-                } rounded-md border flex flex-wrap gap-2`}>
+                <div className={`mb-2 p-2 ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-200'
+                  } rounded-md border flex flex-wrap gap-2`}>
                   {emojis.map((emoji, idx) => (
                     <button
                       key={idx}
                       onClick={() => addEmoji(emoji)}
-                      className={`text-lg ${
-                        isDarkMode ? 'hover:bg-gray-600' : 'hover:bg-gray-100'
-                      } w-8 h-8 flex items-center justify-center rounded-full transition-colors`}
+                      className={`text-lg ${isDarkMode ? 'hover:bg-gray-600' : 'hover:bg-gray-100'
+                        } w-8 h-8 flex items-center justify-center rounded-full transition-colors`}
                     >
                       {emoji}
                     </button>
                   ))}
                 </div>
               )}
-              
+
               <form onSubmit={handleSubmit} className="relative">
-                <div className={`flex rounded-lg ${
-                  isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-gray-100 border-gray-200'
-                } overflow-hidden border`}>
+                <div className={`flex rounded-lg ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-gray-100 border-gray-200'
+                  } overflow-hidden border`}>
                   <div className="flex items-center pl-2">
                     <button
                       type="button"
@@ -590,7 +583,7 @@ const copilot = () => {
                       onChange={handleFileUpload}
                       className="hidden"
                     />
-                    <button 
+                    <button
                       type="button"
                       onClick={() => fileInputRef.current.click()}
                       className={`${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'} transition-colors p-1`}
@@ -598,7 +591,7 @@ const copilot = () => {
                       <Paperclip size={18} />
                     </button>
                   </div>
-                  
+
                   <input
                     type="text"
                     value={inputValue}
@@ -607,22 +600,21 @@ const copilot = () => {
                     className={`flex-1 py-3 px-3 bg-transparent focus:outline-none ${isDarkMode ? 'text-white' : 'text-black'}`}
                     disabled={isRecording}
                   />
-                  
+
                   <div className="flex items-center">
                     <button
                       type="button"
                       onClick={toggleRecording}
-                      className={`p-2 ${
-                        isRecording 
-                          ? 'text-red-500 dark:text-red-400' 
-                          : isDarkMode 
-                            ? 'text-gray-400 hover:text-gray-300' 
+                      className={`p-2 ${isRecording
+                          ? 'text-red-500 dark:text-red-400'
+                          : isDarkMode
+                            ? 'text-gray-400 hover:text-gray-300'
                             : 'text-gray-500 hover:text-gray-700'
-                      } transition-colors`}
+                        } transition-colors`}
                     >
                       <Mic size={18} />
                     </button>
-                    
+
                     <button
                       type="submit"
                       className="px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white disabled:opacity-50 transition-all hover:from-blue-600 hover:to-purple-700"

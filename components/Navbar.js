@@ -56,25 +56,15 @@ const Navbar = () => {
           
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-8 text-sm font-medium">
-              <li>
-                <a className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text transition duration-300 hover:from-pink-500 hover:to-sky-500 relative group" href="/about">
-                  About
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
+              
               
               <li>
-                <a className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text transition duration-300 hover:from-pink-500 hover:to-sky-500 relative group" href="/projects">
+                <a className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text transition duration-300 hover:from-pink-500 hover:to-sky-500 relative group mr-5" href="/projects">
                   Projects
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
-              <li>
-                <a className="text-transparent mr-20 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text transition duration-300 hover:from-pink-500 hover:to-sky-500 relative group" href="/blog">
-                  Blog
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
+              
             </ul>
           </nav>
           
@@ -129,22 +119,14 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="mx-4 my-2 p-4 rounded-2xl bg-white shadow-lg">
             <ul className="space-y-1 text-sm">
-              <li>
-                <a href="#" className="block py-3 px-4 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-medium rounded-lg hover:bg-gray-50">
-                  About
-                </a>
-              </li>
+              
               
               <li>
                 <a href="#" className="block py-3 px-4 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-medium rounded-lg hover:bg-gray-50">
                   Projects
                 </a>
               </li>
-              <li>
-                <a href="#" className="block py-3 px-4 mr-20 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-medium rounded-lg hover:bg-gray-50">
-                  Blog
-                </a>
-              </li>
+              
               <li className="pt-2">
                 <SignedOut>
                   <div className="flex flex-col gap-2 pt-2 border-t">
