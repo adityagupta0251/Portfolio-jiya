@@ -1,36 +1,198 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- =======================
+      Header Section
+========================== -->
+<div align="center" style="padding: 3rem 0; background: linear-gradient(135deg, #b19cd9 0%, #ff9a9e 100%); animation: gradient 15s ease infinite;">
 
-## Getting Started
+![Floral Divider](https://avatars.githubusercontent.com/u/208905135?v=4)
 
-First, run the development server:
+# Hi, I'm **Jiya Shaw** 🌸
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Profile Views](https://komarev.com/ghpvc/?username=jayantidev76&color=ff69b4&style=for-the-badge&label=Blossoming+Visitors)](https://github.com/jayantidev76)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="center" style="margin: 25px 0">
+  <a href="https://www.linkedin.com/in/jiya-shaw-873830366/">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=ff69b4" alt="LinkedIn">
+  </a>
+  <a href="mailto:shawjiya64@gmail.com">
+    <img src="https://img.shields.io/badge/-Email-%23EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=ff69b4" alt="Email">
+  </a>
+  <a href="https://github.com/jayantidev76">
+    <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white&labelColor=ff69b4" alt="GitHub">
+  </a>
+</div>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**☕ Java Artisan | 🌱 Spring Alchemist | 🐍 Python Poet**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Typing Animation](https://readme-typing-svg.demolab.com?font=Caveat&size=32&duration=3000&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=Where+Code+Meets+Creativity;Crafting+Digital+Sonnets;Springing+Into+Elegant+Solutions;Pythonic+Expressions+of+Logic)
 
-## Learn More
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- =======================
+     About Me Section
+========================== -->
+<div align="center">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌺 About Me
+<table align="center" style="background: #fff5f7; border-radius: 15px; padding: 20px;">
+  <tr>
+    <td valign="top" width="50%">
+    
+### 🌼 Technical Blossoms
+- ☕ Java 17 Expertise
+- 🌸 Spring Boot Microservices
+- 🍃 Spring Framework Ecosystem
+- 🐍 Python 3 Development
+- 🌐 Web Development Foundations
+- 📦 REST API Architecture
 
-## Deploy on Vercel
+</td>
+    <td valign="top" width="50%">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🏆 Garden of Achievements
+- 🥇 Spring Boot Certification
+- 🌟 5K+ Lines of Java Poetry
+- 📚 Authored Technical Haikus
+- 🚀 Deployed 10+ Spring Apps
+- 🎓 Python Data Structures Mastery
+- 💡 Open Source Contributor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+<!-- =======================
+     Tech Stack Section
+========================== -->
+<div align="center">
+
+## 🎋 Technical Bamboo Grove
+
+### ☕ Java Ecosystem
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-%236DB33F.svg?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-%2300A98F.svg?style=for-the-badge&logo=hibernate&logoColor=white)
+
+### 🐍 Python Garden
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
+### 🌸 Web Foundations
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+
+### 🛠️ Tools & Databases
+![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
+
+---
+
+<!-- =======================
+     GitHub Stats Section
+========================== -->
+<div align="center">
+
+## 📜 Code Chronicles
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jayantidev76&show_icons=true&theme=radical&hide_title=true&include_all_commits=true&count_private=true&bg_color=fff5f7&title_color=ff69b4&icon_color=ff9a9e)](https://github.com/jayantidev76)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jayantidev76&layout=compact&theme=radical&hide=html,css&bg_color=fff5f7&title_color=ff69b4)](https://github.com/jayantidev76)
+
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=jayantidev76&theme=react-dark&bg_color=fff5f7&hide_border=true&color=ff69b4)
+
+</div>
+
+---
+
+<!-- =======================
+     Featured Projects
+========================== -->
+<div align="center">
+
+## 🌸 Blossoming Creations
+
+### Sakura API Framework
+[![Sakura Preview](https://i.ibb.co/6Yk9K6Q/api-framework.png)](https://example.com)
+
+**Elegant Spring Boot REST API Microframework**
+
+🔧 **Tech Stack:** Java 17 • Spring Boot 3 • Hibernate • Swagger • JUnit
+
+✨ **Key Features:**
+- 🌸 Auto-Configuration Magic
+- 🍃 Lightweight Architecture
+- 📚 Comprehensive Documentation
+- 🔒 Built-in Security Modules
+- 📦 Modular Plugin System
+
+[![View Code](https://img.shields.io/badge/🌸-Explore_Blossoms-ff69b4?style=for-the-badge&logo=github)](https://github.com/jayantidev76)
+
+---
+
+### PyHaiku Generator
+[![Haiku Preview](https://i.ibb.co/4W2hyKx/python-poetry.png)](https://example.com)
+
+**AI-Powered Japanese Poetry Composer**
+
+🔧 **Tech Stack:** Python 3 • NLTK • TensorFlow • Flask • SQLAlchemy
+
+✨ **Key Features:**
+- 🎋 Natural Language Processing
+- ✍️ Syllable Pattern Recognition
+- 🌸 Seasonal Word Database
+- 🖋️ Collaborative Editing
+- 📜 History Preservation
+
+[![Try Demo](https://img.shields.io/badge/🎋-Compose_Poetry-ff9a9e?style=for-the-badge)](https://example.com)
+
+</div>
+
+---
+
+<!-- =======================
+     Contact Section
+========================== -->
+<div align="center">
+
+## 🌸 Let's Create Magic
+
+[![Email](https://img.shields.io/badge/📨-shawjiya64@gmail.com-%23EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shawjiya64@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/🌐-Connect_Professionally-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jiya-shaw-873830366/)
+[![Portfolio](https://img.shields.io/badge/🌸-Digital_Garden-%23ff69b4?style=for-the-badge)](https://jayanti.nextgendev.space)
+
+</div>
+
+---
+
+<div align="center" style="margin: 40px 0; padding: 20px; background: #fff5f7; border-radius: 15px;">
+
+> "Code is poetry - each line a verse, each function a stanza, creating digital sonnets that solve real-world problems."  
+> *― Jiya Shaw*
+
+![Coding Animation](https://i.ibb.co/7QyYk3T/floral-code.gif)
+
+</div>
+
+<style>
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
